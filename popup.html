@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Image Resizer</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <form id="form">
+      <input type="file" id="file" accept="image/*" multiple>
+      <br>
+      <br>
+      Width: <input type="number" id="width" value="1280">
+      <br>
+      <br>
+      Height: <input type="number" id="height" value="720">
+      <br>
+      <br>
+      Format:
+      <select id="format">
+        <option value="image/png">PNG</option>
+        <option value="image/jpeg">JPEG</option>
+        <option value="image/webp">WebP</option>
+        <option value="image/gif">GIF</option>
+      </select>
+      <br>
+      <br>
+      <input type="submit" value="Resize">
+    </form>
+    <script src="popup.js"></script>
+  </body>
+</html>
